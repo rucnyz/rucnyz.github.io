@@ -1,12 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - rucnyz
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - rucnyz/FIR
+  - rucnyz/TowerDefense
+  - rucnyz/DataStructure
+  - rucnyz/blogs
