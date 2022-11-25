@@ -230,7 +230,7 @@ display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will
 
 scholar:
 
-  last_name: [Nie]
+  last_name: [Nie,Nie*]
   first_name: [Yuzhou]
 
   style: apa
