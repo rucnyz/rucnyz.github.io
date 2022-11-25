@@ -9,7 +9,7 @@ profile:
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
   address: >
-    <p>Renmin University of China</p>
+    <p>Stats undergraduate @ Renmin University of China</p>
     <p>Beijing, 100872</p>
 
 news: true  # includes a list of news items
