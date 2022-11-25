@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2022-10-22
 inline: true
 ---
 
-A simple inline announcement.
+I gave a talk about [generative models with variational inference](../assets/pdf/Generative_Model_With_Variational_Inference.pdf)!
