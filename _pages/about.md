@@ -20,4 +20,4 @@ social: true  # includes social icons at the bottom of the page
 I am a senior undergraduate student in [School of Statistics](http://stat.ruc.edu.cn/Home/index.htm), [Renmin University of China](https://www.ruc.edu.cn/en) (RUC). I am fortune to be advised by [Prof. Hongteng Xu](https://hongtengxu.github.io/)
 and work with [Dr. Da Zheng](https://zheng-da.github.io/), [Dr. Huaxiu Yao](https://huaxiuyao.mystrikingly.com/), [Zhenbang Wu](https://zzachw.github.io/).
 
-My current research interests focus on building machine learning models **from mathematical and statistical perspecitives**, and can be applied to downstream applications (such as clinical data) to improve their **fairness and generalizability**.
+My current research interests focus on building machine learning models **from mathematical and statistical perspecitives**, and applying them to downstream applications (such as clinical data) to improve their **interpretability and generalizability**.
