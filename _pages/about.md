@@ -2,22 +2,19 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>RUC</a>. Beijing. nieyuzhou@ruc.edu.cn.
+subtitle: <a href='#'>Purdue</a>. West Lafayette. nie53@purdue.edu.
 
 profile:
   align: right
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
   address: >
-    <p>Stats undergraduate @ Renmin University of China</p>
-    <p>Beijing, 100872</p>
+    <p>305 N. University Street, West Lafayette, IN 47907</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a senior undergraduate student in [School of Statistics](http://stat.ruc.edu.cn/Home/index.htm), [Renmin University of China](https://www.ruc.edu.cn/en) (RUC). I am fortune to be advised by [Prof. Hongteng Xu](https://hongtengxu.github.io/)
-and work with [Dr. Da Zheng](https://zheng-da.github.io/), [Dr. Huaxiu Yao](https://huaxiuyao.mystrikingly.com/), [Zhenbang Wu](https://zzachw.github.io/).
-
-My current research interests focus on building machine learning models **from mathematical and statistical perspecitives**, and applying them to downstream applications (such as clinical data) to improve their **interpretability and generalizability**.
+I am a first-year PhD student at Purdue University in the Department of Computer Science. I am fortunate to be advised by [Prof. Wenbo Guo](https://henrygwb.github.io/). I received my bachelor's degree in Statistics from [Renmin University of China](http://www.ruc.edu.cn/en), where I was advised by [Prof. Hongteng Xu](https://hongtengxu.github.io/).
+My current research interests focus on AI security and AI for security.
