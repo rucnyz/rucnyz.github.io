@@ -5,7 +5,7 @@ permalink: /
 subtitle: <a href='#'>Purdue</a>. West Lafayette. nie53@purdue.edu.
 
 profile:
-  align: right
+  align: left
   image: prof_pic.JPG
   image_circular: false # crops the image to make it circular
   address: >
