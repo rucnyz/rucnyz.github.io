@@ -6,7 +6,7 @@ subtitle: <a href='#'>Purdue</a>. West Lafayette. nie53@purdue.edu.
 
 profile:
   align: right
-  image: prof_pic.png
+  image: prof_pic.JPG
   image_circular: false # crops the image to make it circular
   address: >
     <p>305 N. University Street, West Lafayette, IN 47907</p>
