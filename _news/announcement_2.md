@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-08-22
+date: 2023-08-21
 inline: true
 ---
 
-I will join Amazon Web Service as an applied scientist intern!
+I join Purdue University as a PhD student in Computer Science.
