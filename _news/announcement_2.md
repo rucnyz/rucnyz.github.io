@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2024-08-21
+date: 2024-03-21
 inline: true
 ---
 
-I join UCSB as a PhD student in Computer Science.
+I will join UCSB as a PhD student in Computer Science.
