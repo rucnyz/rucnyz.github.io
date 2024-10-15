@@ -4,4 +4,4 @@ date: 2024-09-23
 inline: true
 ---
 
-I get UCSB research Excellent Award! Thanks to UCSB!
+I get UCSB research Excellent Award!

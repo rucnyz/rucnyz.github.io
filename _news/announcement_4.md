@@ -4,4 +4,4 @@ date: 2024-07-21
 inline: true
 ---
 
-I get FAR AI Research Grant to support my research from 2024-2025! Thanks to FAR AI!
+I get FAR AI Research Grant to support my research from 2024-2025!
