@@ -1,5 +1,7 @@
 
           <div class="publications">
-            <h2>selected publications</h2>
+            <h2>Preprint</h2>
+            {% bibliography -f preprint -q @*[selected=true]* %}
+            <h2>Selected Publications</h2>
             {% bibliography -f papers -q @*[selected=true]* %}
           </div>
