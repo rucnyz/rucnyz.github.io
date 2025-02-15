@@ -94,27 +94,6 @@ git checkout -b $DEPLOY_BRANCH
 # Export JEKYLL_ENV=production
 export JEKYLL_ENV=production
 
-echo "Setting up Ruby environment..."
-if command -v rbenv &> /dev/null; then
-    eval "$(rbenv init -)"
-    rbenv install 3.1.0 || true
-    rbenv global 3.1.0
-elif command -v rvm &> /dev/null; then
-    source $HOME/.rvm/scripts/rvm
-    rvm install 3.1.0 || true
-    rvm use 3.1.0
-else
-    echo "Neither rbenv nor rvm found. Installing Ruby directly..."
-    sudo apt-get update
-    sudo apt-get install -y ruby-full
-fi
-
-# update RubyGems
-gem update --system --no-document || true
-gem install bundler --no-document
-
-# Build site
-bundle update --bundler
 bundle exec jekyll build
 
 # Delete and move files
