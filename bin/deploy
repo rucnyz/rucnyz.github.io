@@ -95,6 +95,8 @@ git checkout -b $DEPLOY_BRANCH
 export JEKYLL_ENV=production
 
 # Build site
+gem update --system --no-document
+bundle update --bundler
 bundle exec jekyll build
 
 # Delete and move files
