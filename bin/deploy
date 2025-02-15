@@ -109,12 +109,12 @@ else
     sudo apt-get install -y ruby-full
 fi
 
-# 更新 RubyGems
+# update RubyGems
 gem update --system --no-document || true
 gem install bundler --no-document
 
 # Build site
-bundle install
+bundle update --bundler
 bundle exec jekyll build
 
 # Delete and move files
