@@ -3,7 +3,19 @@
 
 @string{CIKM = {The Conference on Information and Knowledge Management,}}
 @string{NeurIPS = {The Conference on Neural Information Processing Systems,}}
+@string{ICML Workshop = {The International Conference on Machine Learning Workshop,}}
 
+@article{nie2024seccodeplt,
+  abbr={ICML Workshop},
+  title={SecCodePLT: A Unified Platform for Evaluating the Security of Code GenAI},
+  author={Nie*, Yuzhou and Wang*, Zhun and Yang*, Yu and Jiang, Ruizhe and Tang, Yuheng and Davies, Xander and Gal, Yarin and Li, Bo and Guo, Wenbo and Song, Dawn},
+  arxiv={2410.11096},
+  pdf={https://openreview.net/pdf?id=5N1GPwPkK0},
+  year={2025},
+  selected={true},
+  abstract = {Existing benchmarks for evaluating the security risks and capabilities (e.g., vulnerability detection) of code-generating large language models (LLMs) face several key limitations: (1) limited coverage of risk and capabilities; (2) reliance on static evaluation metrics such as LLM judgments or rule-based detection, which lack the precision of dynamic analysis; and (3) a trade-off between data quality and benchmark scale. To address these challenges, we introduce a general and scalable benchmark construction framework that begins with manually validated, high-quality seed examples and expands them via targeted mutations. Our approach provides a comprehensive suite of artifacts so the benchmark can support comprehensive risk assessment and security capability evaluation using dynamic metrics. By combining expert insights with automated generation, we strike a balance between manual effort, data quality, and benchmark scale. Applying this framework to Python, C/C++, and Java, we build SecCodePLT, a dataset of more than 5.9k samples spanning 44 CWE-based risk categories and three security capabilities.
+Compared with state-of-the-art benchmarks, SecCodePLT offers broader coverage, higher data fidelity, and substantially greater scale. We use SecCodePLT to evaluate leading code LLMs and agents, revealing their strengths and weaknesses in both generating secure code and identifying or fixing vulnerabilities.},
+}
 
 @article{chen2024llmmeetsdrladvancing,
       abbr={NeurIPS},
@@ -11,6 +23,7 @@
       author={Nie*, Yuzhou and Chen*, Xuan and Guo, Wenbo and Zhang, Xiangyu},
       year={2024},
       selected={true},
+      arxiv={2406.08705},
       abstract={Recent studies developed jailbreaking attacks, which construct jailbreaking prompts to ``fool'' LLMs into responding to harmful questions.
 Early-stage jailbreaking attacks require access to model internals or significant human efforts.
 More advanced attacks utilize genetic algorithms for automatic and black-box attacks.
