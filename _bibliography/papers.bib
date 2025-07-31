@@ -5,38 +5,47 @@
 @string{COLM = {Conference on Language Modeling,}}
 @string{NeurIPS = {The Conference on Neural Information Processing Systems,}}
 @string{ICML-Workshop = {The International Conference on Machine Learning Workshop,}}
+@string{EMNLP = {The Conference on Empirical Methods in Natural Language Processing,}}
 
 @article{nie2025seccodeplt,
-  abbr={ICML-Workshop},
-  title={SecCodePLT: A Unified Platform for Evaluating the Security of Code GenAI},
-  author={Nie*, Yuzhou and Wang*, Zhun and Yang*, Yu and Jiang, Ruizhe and Tang, Yuheng and Davies, Xander and Gal, Yarin and Li, Bo and Guo, Wenbo and Song, Dawn},
-  arxiv={2410.11096},
-  pdf={https://openreview.net/pdf?id=5N1GPwPkK0},
-  year={2025},
-  selected={true},
-  abstract = {Existing benchmarks for evaluating the security risks and capabilities (e.g., vulnerability detection) of code-generating large language models (LLMs) face several key limitations: (1) limited coverage of risk and capabilities; (2) reliance on static evaluation metrics such as LLM judgments or rule-based detection, which lack the precision of dynamic analysis; and (3) a trade-off between data quality and benchmark scale. To address these challenges, we introduce a general and scalable benchmark construction framework that begins with manually validated, high-quality seed examples and expands them via targeted mutations. Our approach provides a comprehensive suite of artifacts so the benchmark can support comprehensive risk assessment and security capability evaluation using dynamic metrics. By combining expert insights with automated generation, we strike a balance between manual effort, data quality, and benchmark scale. Applying this framework to Python, C/C++, and Java, we build SecCodePLT, a dataset of more than 5.9k samples spanning 44 CWE-based risk categories and three security capabilities.
+abbr ={ICML-Workshop},
+title ={SecCodePLT: A Unified Platform for Evaluating the Security of Code GenAI},
+author ={Nie*, Yuzhou and Wang*, Zhun and Yang*, Yu and Jiang, Ruizhe and Tang, Yuheng and Davies, Xander and Gal, Yarin and Li, Bo and Guo, Wenbo and Song, Dawn},
+arxiv ={2410.11096},
+pdf ={https://openreview.net/pdf?id=5N1GPwPkK0},
+year ={2025},
+selected ={true},
+abstract = {Existing benchmarks for evaluating the security risks and capabilities (e.g., vulnerability detection) of code-generating large language models (LLMs) face several key limitations: (1) limited coverage of risk and capabilities; (2) reliance on static evaluation metrics such as LLM judgments or rule-based detection, which lack the precision of dynamic analysis; and (3) a trade-off between data quality and benchmark scale. To address these challenges, we introduce a general and scalable benchmark construction framework that begins with manually validated, high-quality seed examples and expands them via targeted mutations. Our approach provides a comprehensive suite of artifacts so the benchmark can support comprehensive risk assessment and security capability evaluation using dynamic metrics. By combining expert insights with automated generation, we strike a balance between manual effort, data quality, and benchmark scale. Applying this framework to Python, C/C++, and Java, we build SecCodePLT, a dataset of more than 5.9k samples spanning 44 CWE-based risk categories and three security capabilities.
 Compared with state-of-the-art benchmarks, SecCodePLT offers broader coverage, higher data fidelity, and substantially greater scale. We use SecCodePLT to evaluate leading code LLMs and agents, revealing their strengths and weaknesses in both generating secure code and identifying or fixing vulnerabilities.},
 }
-
+@article{wang2025agentvigil,
+author = {Wang, Zhun and Siu, Vincent and Ye, Zhe and Shi, Tianneng and Nie, Yuzhou and Zhao, Xuandong and Wang, Chenguang and Guo, Wenbo and Song, Dawn},
+title = {AgentVigil: Generic Black-Box Red-teaming for Indirect Prompt Injection against LLM Agents},
+year = {2025},
+abbr = {EMNLP},
+arxiv = {2505.05849},
+selected ={true},
+abstract = {The strong planning and reasoning capabilities of Large Language Models (LLMs) have fostered the development of agent-based systems capable of leveraging external tools and interacting with increasingly complex environments. However, these powerful features also introduce a critical security risk: indirect prompt injection, a sophisticated attack vector that compromises the core of these agents, the LLM, by manipulating contextual information rather than direct user prompts. In this work, we propose a generic black-box fuzzing framework, AgentVigil, designed to automatically discover and exploit indirect prompt injection vulnerabilities across diverse LLM agents. Our approach starts by constructing a high-quality initial seed corpus, then employs a seed selection algorithm based on Monte Carlo Tree Search (MCTS) to iteratively refine inputs, thereby maximizing the likelihood of uncovering agent weaknesses. We evaluate AgentVigil on two public benchmarks, AgentDojo and VWA-adv, where it achieves 71% and 70% success rates against agents based on o3-mini and GPT-4o, respectively, nearly doubling the performance of baseline attacks. Moreover, AgentVigil exhibits strong transferability across unseen tasks and internal LLMs, as well as promising results against defenses. Beyond benchmark evaluations, we apply our attacks in real-world environments, successfully misleading agents to navigate to arbitrary URLs, including malicious sites.},
+}
 @article{nie2024releak,
-  abbr={COLM},
-  title={ReLeak: RL-based Red-teaming for LLM Privacy Leakage},
-  author={Nie, Yuzhou and Wang, Zhun and Yu, Ye and Wu, Xian and Zhao, Xuandong and Bastian, Nathaniel D. and Guo, Wenbo and Song, Dawn},
-  arxiv={2412.05734},
-  code={https://github.com/rucnyz/PrivAgent},
-  year={2025},
-  selected={true},
-  abstract = {Recent studies have discovered that large language models (LLM) may be ``fooled'' to output private information, including training data, system prompts, and personally identifiable information, under carefully crafted adversarial prompts. Existing red-teaming approaches for privacy leakage either rely on manual efforts or focus solely on system prompt extraction, making them ineffective for severe risks of training data leakage. We propose ReLeak, a novel black-box red-teaming framework for LLM privacy leakage. Our framework trains an open-source LLM through reinforcement learning as the attack agent to generate adversarial prompts for both training data extraction and system prompt extraction. To achieve this, we propose a novel reward function to provide effective and fine-grained rewards and design novel mechanisms to balance exploration and exploitation during learning and enhance the diversity of adversarial prompts. Through extensive evaluations, we first show that ReLeak significantly outperforms existing rule-based approaches in training data extraction and automated methods in system prompt leakage. We also demonstrate the effectiveness of ReLeak in extracting system prompts from real-world applications in OpenAI's GPT Store. We further demonstrate ReLeak's effectiveness in evading the existing guardrail defense and its helpfulness in enabling better safety alignment. Finally, we validate our customized designs through a detailed ablation study.},
+abbr ={COLM},
+title ={ReLeak: RL-based Red-teaming for LLM Privacy Leakage},
+author ={Nie, Yuzhou and Wang, Zhun and Yu, Ye and Wu, Xian and Zhao, Xuandong and Bastian, Nathaniel D. and Guo, Wenbo and Song, Dawn},
+arxiv ={2412.05734},
+code ={https://github.com/rucnyz/PrivAgent},
+year ={2025},
+selected ={true},
+abstract = {Recent studies have discovered that large language models (LLM) may be ``fooled'' to output private information, including training data, system prompts, and personally identifiable information, under carefully crafted adversarial prompts. Existing red-teaming approaches for privacy leakage either rely on manual efforts or focus solely on system prompt extraction, making them ineffective for severe risks of training data leakage. We propose ReLeak, a novel black-box red-teaming framework for LLM privacy leakage. Our framework trains an open-source LLM through reinforcement learning as the attack agent to generate adversarial prompts for both training data extraction and system prompt extraction. To achieve this, we propose a novel reward function to provide effective and fine-grained rewards and design novel mechanisms to balance exploration and exploitation during learning and enhance the diversity of adversarial prompts. Through extensive evaluations, we first show that ReLeak significantly outperforms existing rule-based approaches in training data extraction and automated methods in system prompt leakage. We also demonstrate the effectiveness of ReLeak in extracting system prompts from real-world applications in OpenAI's GPT Store. We further demonstrate ReLeak's effectiveness in evading the existing guardrail defense and its helpfulness in enabling better safety alignment. Finally, we validate our customized designs through a detailed ablation study.},
 }
 
 @article{chen2024llmmeetsdrladvancing,
-      abbr={NeurIPS},
-      title={When LLM Meets DRL: Advancing Jailbreaking Efficiency via DRL-guided Search},
-      author={Nie*, Yuzhou and Chen*, Xuan and Guo, Wenbo and Zhang, Xiangyu},
-      year={2024},
-      selected={true},
-      arxiv={2406.08705},
-      abstract={Recent studies developed jailbreaking attacks, which construct jailbreaking prompts to ``fool'' LLMs into responding to harmful questions.
+abbr ={NeurIPS},
+title ={When LLM Meets DRL: Advancing Jailbreaking Efficiency via DRL-guided Search},
+author ={Nie*, Yuzhou and Chen*, Xuan and Guo, Wenbo and Zhang, Xiangyu},
+year ={2024},
+selected ={true},
+arxiv ={2406.08705},
+abstract ={Recent studies developed jailbreaking attacks, which construct jailbreaking prompts to ``fool'' LLMs into responding to harmful questions.
 Early-stage jailbreaking attacks require access to model internals or significant human efforts.
 More advanced attacks utilize genetic algorithms for automatic and black-box attacks.
 However, the random nature of genetic algorithms significantly limits the effectiveness of these attacks.
@@ -49,35 +58,35 @@ We further validate the key design choices of RLbreaker via a comprehensive abla
 }
 
 @article{CICAI_AIMI,
-  title={Adversarial and Implicit Modality Imputation with Applications to Depression Early Detection},
-  author={Nie*, Yuzhou and Huang*, Chengyue and Liang, Hailun and Xu, Hongteng},
-  year={2022},
-  pdf={AIMI_CICAI.pdf},
-  code={https://github.com/rucnyz/AIMI},
-  abbr={CICAI},
-  selected={false},
-  abstract={Depression early detection is a significant healthcare task that heavily relies on high-quality multi-modal medical data. In practice, however, learning a robust detection model is challenging because real-world data often suffers from serious modality-level missing issues caused by imperfect data collection and strict data sharing policies. In this study, we propose an Adversarial and Implicit Modality Imputation (AIMI) method to resolve this challenge. In particular, when training multi-modal predictive models, we learn an implicit mechanism to impute the missing modalities of training data at the same time. These two learning objectives are achieved jointly in an adversarial learning framework. Based on the UK Biobank dataset, we demonstrate the effectiveness and superiority of our method on the early detection of depression. Codes are available at https://github.com/rucnyz/AIMI}
+title ={Adversarial and Implicit Modality Imputation with Applications to Depression Early Detection},
+author ={Nie*, Yuzhou and Huang*, Chengyue and Liang, Hailun and Xu, Hongteng},
+year ={2022},
+pdf ={AIMI_CICAI.pdf},
+code ={https://github.com/rucnyz/AIMI},
+abbr ={CICAI},
+selected ={false},
+abstract ={Depression early detection is a significant healthcare task that heavily relies on high-quality multi-modal medical data. In practice, however, learning a robust detection model is challenging because real-world data often suffers from serious modality-level missing issues caused by imperfect data collection and strict data sharing policies. In this study, we propose an Adversarial and Implicit Modality Imputation (AIMI) method to resolve this challenge. In particular, when training multi-modal predictive models, we learn an implicit mechanism to impute the missing modalities of training data at the same time. These two learning objectives are achieved jointly in an adversarial learning framework. Based on the UK Biobank dataset, we demonstrate the effectiveness and superiority of our method on the early detection of depression. Codes are available at https://github.com/rucnyz/AIMI}
 }
 
 @article{GWMAC_CIKM,
-  abbr={CIKM},
-  author={Gong*, Fengjiao and Nie*, Yuzhou and Xu, Hongteng},
-  title={Gromov-Wasserstein Multi-Modal Alignment and Clustering},
-  year={2022},
-  isbn={9781450392365},
-  publisher={Association for Computing Machinery},
-  address={New York, NY, USA},
-  url={https://doi.org/10.1145/3511808.3557339},
-  doi={10.1145/3511808.3557339},
-  abstract={Multi-modal clustering aims at finding a clustering structure shared by the data of different modalities in an unsupervised way. Currently, solving this problem often relies on two assumptions: i) the multi-modal data own the same latent distribution, and ii) the observed multi-modal data are well-aligned and without any missing modalities. Unfortunately, these two assumptions are often questionable in practice and thus limit the feasibility of many multi-modal clustering methods. In this work, we develop a new multi-modal clustering method based on the Gromovization of optimal transport distance, which relaxes the dependence on the above two assumptions. In particular, given the data of different modalities, whose correspondence is unknown, our method learns the Gromov-Wasserstein (GW) barycenter of their kernel matrices. Driven by the modularity maximization principle, the GW barycenter helps to explore the clustering structure shared by different modalities. Moreover, the GW barycenter is associated with the GW distances between the different modalities to the clusters, and the optimal transport plans corresponding to the GW distances help to achieve the alignment and the clustering of the multi-modal data jointly. Experimental results show that our method outperforms state-of-the-art multi-modal clustering methods, especially when the data are (partially or completely) unaligned. The code is available at https://github.com/rucnyz/GWMAC.},
-  booktitle={Proceedings of the 31st ACM International Conference on Information &amp; Knowledge Management},
-  pages={603–613},
-  numpages={11},
-  keywords={gromov-wasserstein barycenter, optimal transport, data alignment, multi-modal clustering, kernel fusion},
-  location={Atlanta, GA, USA},
-  series={CIKM '22},
-  selected={true},
-  pdf={GWMAC_CIKM2022.pdf},
-  code={https://github.com/rucnyz/GWMAC},
+abbr ={CIKM},
+author ={Gong*, Fengjiao and Nie*, Yuzhou and Xu, Hongteng},
+title ={Gromov-Wasserstein Multi-Modal Alignment and Clustering},
+year ={2022},
+isbn ={9781450392365},
+publisher ={Association for Computing Machinery},
+address ={New York, NY, USA},
+url ={https://doi.org/10.1145/3511808.3557339},
+doi ={10.1145/3511808.3557339},
+abstract ={Multi-modal clustering aims at finding a clustering structure shared by the data of different modalities in an unsupervised way. Currently, solving this problem often relies on two assumptions: i) the multi-modal data own the same latent distribution, and ii) the observed multi-modal data are well-aligned and without any missing modalities. Unfortunately, these two assumptions are often questionable in practice and thus limit the feasibility of many multi-modal clustering methods. In this work, we develop a new multi-modal clustering method based on the Gromovization of optimal transport distance, which relaxes the dependence on the above two assumptions. In particular, given the data of different modalities, whose correspondence is unknown, our method learns the Gromov-Wasserstein (GW) barycenter of their kernel matrices. Driven by the modularity maximization principle, the GW barycenter helps to explore the clustering structure shared by different modalities. Moreover, the GW barycenter is associated with the GW distances between the different modalities to the clusters, and the optimal transport plans corresponding to the GW distances help to achieve the alignment and the clustering of the multi-modal data jointly. Experimental results show that our method outperforms state-of-the-art multi-modal clustering methods, especially when the data are (partially or completely) unaligned. The code is available at https://github.com/rucnyz/GWMAC.},
+booktitle ={Proceedings of the 31st ACM International Conference on Information &amp; Knowledge Management},
+pages ={603–613},
+numpages ={11},
+keywords ={gromov-wasserstein barycenter, optimal transport, data alignment, multi-modal clustering, kernel fusion},
+location ={Atlanta, GA, USA},
+series ={CIKM '22},
+selected ={true},
+pdf ={GWMAC_CIKM2022.pdf},
+code ={https://github.com/rucnyz/GWMAC},
 }
 
