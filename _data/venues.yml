@@ -8,6 +8,10 @@
   url: https://colmweb.org/
   color: "#ff7f0e"
 
+"EMNLP":
+  url: https://2025.emnlp.org/
+  color: "#d62728"
+
 "CIKM":
   url: https://www.cikm2022.org/
   color: "#00369f"
