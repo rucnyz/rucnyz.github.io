@@ -1,8 +1,12 @@
 "NeurIPS":
   url: https://neurips.cc/
 
-"ICML Workshop":
+"ICML-Workshop":
   url: https://icml.cc/
+
+"COLM":
+  url: https://colmweb.org/
+  color: "#f0f0f0"
 
 "CIKM":
   url: https://www.cikm2022.org/
