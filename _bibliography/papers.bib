@@ -2,11 +2,12 @@
 ---
 
 @string{CIKM = {The Conference on Information and Knowledge Management,}}
+@string{COLM = {Conference on Language Modeling,}}
 @string{NeurIPS = {The Conference on Neural Information Processing Systems,}}
-@string{ICML Workshop = {The International Conference on Machine Learning Workshop,}}
+@string{ICML-Workshop = {The International Conference on Machine Learning Workshop,}}
 
-@article{nie2024seccodeplt,
-  abbr={ICML Workshop},
+@article{nie2025seccodeplt,
+  abbr={ICML-Workshop},
   title={SecCodePLT: A Unified Platform for Evaluating the Security of Code GenAI},
   author={Nie*, Yuzhou and Wang*, Zhun and Yang*, Yu and Jiang, Ruizhe and Tang, Yuheng and Davies, Xander and Gal, Yarin and Li, Bo and Guo, Wenbo and Song, Dawn},
   arxiv={2410.11096},
@@ -15,6 +16,17 @@
   selected={true},
   abstract = {Existing benchmarks for evaluating the security risks and capabilities (e.g., vulnerability detection) of code-generating large language models (LLMs) face several key limitations: (1) limited coverage of risk and capabilities; (2) reliance on static evaluation metrics such as LLM judgments or rule-based detection, which lack the precision of dynamic analysis; and (3) a trade-off between data quality and benchmark scale. To address these challenges, we introduce a general and scalable benchmark construction framework that begins with manually validated, high-quality seed examples and expands them via targeted mutations. Our approach provides a comprehensive suite of artifacts so the benchmark can support comprehensive risk assessment and security capability evaluation using dynamic metrics. By combining expert insights with automated generation, we strike a balance between manual effort, data quality, and benchmark scale. Applying this framework to Python, C/C++, and Java, we build SecCodePLT, a dataset of more than 5.9k samples spanning 44 CWE-based risk categories and three security capabilities.
 Compared with state-of-the-art benchmarks, SecCodePLT offers broader coverage, higher data fidelity, and substantially greater scale. We use SecCodePLT to evaluate leading code LLMs and agents, revealing their strengths and weaknesses in both generating secure code and identifying or fixing vulnerabilities.},
+}
+
+@article{nie2024releak,
+  abbr={COLM},
+  title={ReLeak: RL-based Red-teaming for LLM Privacy Leakage},
+  author={Nie, Yuzhou and Wang, Zhun and Yu, Ye and Wu, Xian and Zhao, Xuandong and Bastian, Nathaniel D. and Guo, Wenbo and Song, Dawn},
+  arxiv={2412.05734},
+  code={https://github.com/rucnyz/PrivAgent},
+  year={2025},
+  selected={true},
+  abstract = {Recent studies have discovered that large language models (LLM) may be ``fooled'' to output private information, including training data, system prompts, and personally identifiable information, under carefully crafted adversarial prompts. Existing red-teaming approaches for privacy leakage either rely on manual efforts or focus solely on system prompt extraction, making them ineffective for severe risks of training data leakage. We propose ReLeak, a novel black-box red-teaming framework for LLM privacy leakage. Our framework trains an open-source LLM through reinforcement learning as the attack agent to generate adversarial prompts for both training data extraction and system prompt extraction. To achieve this, we propose a novel reward function to provide effective and fine-grained rewards and design novel mechanisms to balance exploration and exploitation during learning and enhance the diversity of adversarial prompts. Through extensive evaluations, we first show that ReLeak significantly outperforms existing rule-based approaches in training data extraction and automated methods in system prompt leakage. We also demonstrate the effectiveness of ReLeak in extracting system prompts from real-world applications in OpenAI's GPT Store. We further demonstrate ReLeak's effectiveness in evading the existing guardrail defense and its helpfulness in enabling better safety alignment. Finally, we validate our customized designs through a detailed ablation study.},
 }
 
 @article{chen2024llmmeetsdrladvancing,
