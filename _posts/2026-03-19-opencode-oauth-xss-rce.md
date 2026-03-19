@@ -147,8 +147,10 @@ server.serve_forever()
    ```
 3. Victim starts OpenCode: `opencode web`
 4. Victim authenticates the MCP server (`opencode mcp auth evil_tool`) and gets automatically redirected
+
 ![PoC screenshot](/assets/img/opencode-xss-poc.png)
 
+{:start="5"}
 5. Confirm: `ls /tmp/evil_mcp_pwned` — the file exists
 
 The victim only sees a normal "Authorization Failed" page. The attack is completely silent.
