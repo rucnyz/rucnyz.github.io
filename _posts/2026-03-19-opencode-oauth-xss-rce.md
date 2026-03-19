@@ -11,20 +11,6 @@ categories: en
 
 A malicious MCP server can execute arbitrary commands on the victim's local machine through a reflected XSS in the OAuth callback handler. When a user authenticates with a remote MCP server, OpenCode starts an OAuth callback server on `127.0.0.1:19876`. The attacker's OAuth authorization endpoint redirects back to this callback with a crafted `error_description` containing JavaScript. Because the callback handler inserts the error message into HTML without escaping, and the CORS policy allows all localhost origins to access the OpenCode API, the attacker's JavaScript can create sessions and execute shell commands.
 
-This is the same class of vulnerability as [CVE-2026-22813](https://github.com/anomalyco/opencode/security/advisories/GHSA-c83v-7274-4vgp) (CVSS 9.4, Critical): XSS on a localhost origin → cross-origin API access → shell command execution.
-
-## Disclosure Timeline
-
-| Date | Event |
-|------|-------|
-| 2026-02-06 | Reported via GitHub Security Advisory ([GHSA-jrpg-frg2-m394](https://github.com/anomalyco/opencode/security/advisories/GHSA-jrpg-frg2-m394)) |
-| 2026-03-19 | 41 days with no response from vendor; advisory still in "triage" status |
-| 2026-03-19 | Public disclosure (this post) |
-
-The project's [SECURITY.md](https://github.com/anomalyco/opencode/blob/dev/SECURITY.md) states that escalation should occur if no acknowledgment is received within 6 business days. Over 40 days have passed with zero response.
-
-> **Note on scope:** While the security policy states that "external MCP servers you configure are outside our trust boundary," this vulnerability is not about MCP server behavior. The root cause is a reflected XSS in OpenCode's own OAuth callback handler (`oauth-callback.ts`) which fails to escape untrusted input before inserting it into HTML. The malicious MCP server is merely the attack vector — analogous to how a malicious website triggers a browser vulnerability. This is reinforced by the fact that CVE-2026-22813, which was accepted and patched by the OpenCode team, follows the exact same pattern: untrusted external input → XSS in OpenCode's localhost page → RCE via CORS to the API.
-
 ## Vulnerability Details
 
 ### Vulnerable Code
