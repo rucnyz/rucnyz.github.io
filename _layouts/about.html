@@ -41,6 +41,10 @@ layout: default
           {%- endif %}
 
 
+          {% if page.research -%}
+          <!-- Research -->
+          {%- include research.html %}
+          {%- endif %}
           {% if page.news -%}
           <!-- News -->
           {%- include news.html %}
