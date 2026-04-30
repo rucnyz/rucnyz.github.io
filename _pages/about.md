@@ -15,7 +15,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a second-year PhD student at the University of California, Santa Barbara, in the Department of Computer Science. I am fortunate to be advised by [Prof. Wenbo Guo](https://henrygwb.github.io/). I received my bachelor's degree in Statistics from [Renmin University of China](http://www.ruc.edu.cn/en), where I was advised by [Prof. Hongteng Xu](https://hongtengxu.github.io/).
+I am a second-year PhD student at the University of California, Santa Barbara, in the Department of Computer Science. I am fortunate to be advised by [Prof. Wenbo Guo](https://henrygwb.github.io/), and I work closely with [Prof. Bo Li](https://aisecure.github.io/) and [Prof. Dawn Song](https://people.eecs.berkeley.edu/~dawnsong/). I received my bachelor's degree in Statistics from [Renmin University of China](http://www.ruc.edu.cn/en), where I was advised by [Prof. Hongteng Xu](https://hongtengxu.github.io/).
 
 I am also a founding member of [Virtue AI](https://home.virtueai.com/), working on agent security as a research scientist.
 My research interests focus on AI security and AI for security.

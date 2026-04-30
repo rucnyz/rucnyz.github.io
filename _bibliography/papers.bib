@@ -6,6 +6,37 @@
 @string{NeurIPS = {The Conference on Neural Information Processing Systems,}}
 @string{ICML-Workshop = {The International Conference on Machine Learning Workshop,}}
 @string{EMNLP = {The Conference on Empirical Methods in Natural Language Processing,}}
+@string{ICML = {The International Conference on Machine Learning,}}
+
+@article{li2026opensage,
+  abbr ={ICML},
+  title ={OpenSage: Self-programming Agent Generation Engine},
+  author ={Li, Hongwei and Wang, Zhun and Dai, Qinrun and Nie, Yuzhou and Peng, Jinjun and Liu, Ruitong and Zhang, Jingyang and Zhu, Kaijie and He, Jingxuan and Wang, Lun and Ding, Yangruibo and Chen, Yueqi and Guo, Wenbo and Song, Dawn},
+  arxiv ={2602.16891},
+  year ={2026},
+  selected ={true},
+  abstract = {Agent development kits (ADKs) provide effective platforms and tooling for constructing agents, and their designs are critical to the constructed agents' performance, especially the functionality for agent topology, tools, and memory. However, current ADKs either lack sufficient functional support or rely on humans to manually design these components, limiting agents' generalizability and overall performance. We propose OpenSage, the first ADK that enables LLMs to automatically create agents with self-generated topology and toolsets while providing comprehensive and structured memory support. OpenSage offers effective functionality for agents to create and manage their own sub-agents and toolkits. It also features a hierarchical, graph-based memory system for efficient management and a specialized toolkit tailored to software engineering tasks. Extensive experiments across three state-of-the-art benchmarks with various backbone models demonstrate the advantages of OpenSage over existing ADKs. We also conduct rigorous ablation studies to demonstrate the effectiveness of our design for each component. We believe OpenSage can pave the way for the next generation of agent development, shifting the focus from human-centered to AI-centered paradigms.},
+}
+
+@article{guo2026bluecodeagent,
+  abbr ={ICML},
+  title ={BlueCodeAgent: A Blue Teaming Agent Powered by Automated Red Teaming for CodeGen AI},
+  author ={Guo*, Chengquan and Nie*, Yuzhou and Xie, Chulin and Lin, Zinan and Guo, Wenbo and Li, Bo},
+  arxiv ={2510.18131},
+  year ={2026},
+  selected ={true},
+  abstract = {Existing research on CodeGen AI security mainly focuses on red teaming, which aims to uncover vulnerabilities and risks in AI-generated code. However, progress on the blue teaming side remains limited, as effective defenses require a deep security analysis of given tasks and edge cases. To fill in this gap, we propose BlueCodeAgent, an end-to-end blue teaming agent powered by automated red teaming. Our red teaming component generates diverse risky instances, providing effective edge cases and guidance for the subsequent blue teaming process. Our blue teaming agent then conducts multi-level defense, leveraging these red teaming examples to detect previously seen and unseen risk scenarios through constitution summarization and dynamic code analysis. Our evaluation across four representative code-related tasks--bias instruction detection, malicious instruction detection, vulnerable code detection, and prompt injection detection--shows that BlueCodeAgent achieves significant gains over diverse baselines. In particular, for vulnerability detection tasks, BlueCodeAgent integrates dynamic analysis to effectively reduce false positives, a challenging problem as base models tend to be over-conservative. Overall, with GPT-4o as the base model, BlueCodeAgent achieves an average F1 score improvement of 14.7% across four tasks compared to directly prompting the model, attributed to its ability to summarize actionable constitutions and perform dynamic analysis.},
+}
+
+@article{zhang2026theta,
+  abbr ={ICML},
+  title ={THETA: Threshold-Based Exclusive Batching for Memory-Bandwidth-Constrained LLM Inference},
+  author ={Zhang*, Weifang and Nie*, Yuzhou and Pang, Bowen and Ma, Guangrui and Wu, Shining},
+  website ={https://openreview.net/forum?id=dUsQj7QFvs},
+  year ={2026},
+  selected ={true},
+  abstract = {Chunked prefill has become the dominant scheduling strategy for large language model (LLM) inference, interleaving prefill and decode operations to improve GPU utilization. However, this approach does not universally outperform exclusive batching: on bandwidth-constrained GPUs, mixed batches can intensify memory-bandwidth contention and degrade decode throughput. Through controlled experiments on H200 (4.8 TB/s) and RTX PRO 6000 (1.8 TB/s), we find that mixed batching begins to underperform exclusive decoding at 80% decode ratio on H200, but at merely 20% on the bandwidth-constrained RTX PRO 6000. We present THETA, a scheduling framework for exclusive batching that derives closed-form, asymptotically optimal phase-switching thresholds under stochastic output-length models, along with memory-safe batch sizing. Experiments on real-world workloads demonstrate that THETA achieves up to 15.3% higher throughput than chunked prefill on bandwidth-constrained hardware while maintaining competitive latency.},
+}
 
 @article{nie2025seccodeplt,
 abbr ={NeurIPS},
