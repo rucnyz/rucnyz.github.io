@@ -52,11 +52,15 @@ If it is the first time and seq_lengths does not yet exist in the cache, perform
 
 When the next batch arrives, seq_lengths is a new tensor, the `is` check fails, and the cache is naturally invalidated — no manual invalidation needed.
 
-### Results
+### The charts
 
 Before: rows of tiny green dots are cudaStreamSynchronize calls, densely packed across forward and backward passes.
 
+![Before](https://github.com/user-attachments/assets/0f490169-b7f2-4c88-be31-b5eac19cec5f)
+
 After: the green dots are almost entirely gone — there is only one at the very beginning (first layer computes + caches), and all subsequent layers hit the cache. The Forward block's width shrinks from ~500ms to 301ms, and Backward from ~1020ms to 960ms.
+
+![After](https://github.com/user-attachments/assets/4e5024d5-f9e5-485f-adb0-0e595573b365)
 
 Gains (Qwen3 14B QLoRA SFT):
 - Forward 43.3% faster (most impacted — synchronization operations accounted for a large share)
