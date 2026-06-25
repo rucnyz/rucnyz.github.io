@@ -2,13 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>UC Santa Barbara</a>. Santa Barbara. yuzhounie@ucsb.edu.
+subtitle: <a href='#'>Meta Superintelligence Lab</a>. yuzhounie@ucsb.edu.
 
 profile:
   image: prof_pic.JPG
   image_circular: false # crops the image to make it circular
   address: >
-    <p>Building 556, University of California, Santa Barbara, Santa Barbara, CA 93106</p>
+    <p>1 Meta Way, Menlo Park, CA 94025</p>
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -16,6 +16,7 @@ research: true  # includes the categorized Research section
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a second-year PhD student at the University of California, Santa Barbara, in the Department of Computer Science. I am fortunate to be advised by [Prof. Wenbo Guo](https://henrygwb.github.io/), and I work closely with [Prof. Bo Li](https://aisecure.github.io/) and [Prof. Dawn Song](https://people.eecs.berkeley.edu/~dawnsong/). I received my bachelor's degree in Statistics from [Renmin University of China](http://www.ruc.edu.cn/en), where I was advised by [Prof. Hongteng Xu](https://hongtengxu.github.io/).
+I am a Senior AI Research Scientist at [Meta Superintelligence Lab](https://ai.meta.com/). I received my PhD in Computer Science from the [University of California, Santa Barbara](https://www.cs.ucsb.edu/) in 2026, advised by [Prof. Wenbo Guo](https://henrygwb.github.io/), working closely with [Prof. Bo Li](https://aisecure.github.io/) and [Prof. Dawn Song](https://people.eecs.berkeley.edu/~dawnsong/). I received my bachelor's degree in Statistics from [Renmin University of China](http://www.ruc.edu.cn/en), where I was advised by [Prof. Hongteng Xu](https://hongtengxu.github.io/).
 
-I am also a founding member of [Virtue AI](https://home.virtueai.com/), working on agent security as a research scientist.
+Previously, I was a founding engineer at [Virtue AI](https://www.virtueai.com/), leading large-scale post-training of cybersecurity-specialized LLMs.
+My research interests focus on AI security, AI for security, and inference system optimization.

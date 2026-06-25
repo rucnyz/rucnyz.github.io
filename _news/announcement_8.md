@@ -4,5 +4,4 @@ date: 2025-05-21
 inline: true
 ---
 
-I will continue to work as a research intern at Virtue AI from June 2025 to August 2025, advised
-by [Bo Li](https://aisecure.github.io/).
+Continuing work at [Virtue AI](https://www.virtueai.com/) leading large-scale post-training of cybersecurity-specialized LLMs.
