@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Meta Superintelligence Lab</a>. yuzhounie@ucsb.edu.
+subtitle: <a href='#'>Meta Superintelligence Lab</a>. rucnyz@gmail.com.
 
 profile:
   image: prof_pic.JPG
