@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Meta Superintelligence Lab</a>. rucnyz@gmail.com.
+subtitle: <a href='https://ai.meta.com/'>Meta Superintelligence Lab</a>. rucnyz@gmail.com.
 
 profile:
   image: prof_pic.JPG
