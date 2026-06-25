@@ -2,7 +2,9 @@ github_users:
   - rucnyz
 
 github_repos:
+  - fla-org/flash-linear-attention
+  - THUDM/slime
+  - lightseekorg/tokenspeed
+  - ucsb-mlsec/VulnLLM-R
+  - rucnyz/devora
   - rucnyz/ChatDailyPapers
-  - rucnyz/rucnyz.github.io
-  - SecCodePLT/seccodeplt.github.io
-  - rucnyz/blogs
