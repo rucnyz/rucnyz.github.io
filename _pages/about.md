@@ -16,7 +16,7 @@ research: true  # includes the categorized Research section
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Senior AI Research Scientist at [Meta Superintelligence Lab](https://ai.meta.com/), working on post-training. I contribute to [Muse Spark 1.2](https://developer.meta.com/ai/models/muse-spark/). Side interest in inference system optimization.
+I am a Senior AI Research Scientist at [Meta Superintelligence Lab](https://ai.meta.com/), working on post-training, where I contribute to [Muse Spark 1.2](https://developer.meta.com/ai/models/muse-spark/). I also have a side interest in inference system optimization.
 
 I received my PhD in Computer Science from the [University of California, Santa Barbara](https://www.cs.ucsb.edu/) in 2026, advised by [Prof. Wenbo Guo](https://henrygwb.github.io/), working closely with [Prof. Bo Li](https://aisecure.github.io/) and [Prof. Dawn Song](https://people.eecs.berkeley.edu/~dawnsong/). I received my bachelor's degree in Statistics from [Renmin University of China](http://www.ruc.edu.cn/en), where I was advised by [Prof. Hongteng Xu](https://hongtengxu.github.io/).
 
