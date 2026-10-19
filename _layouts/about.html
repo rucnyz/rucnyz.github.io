@@ -7,6 +7,7 @@ layout: default
         <article>
           {% if page.profile -%}
           <div class="row">
+            {%- if page.profile.image %}
             <div class="col-sm-3">
               {%- if page.profile.image %}
                 {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
@@ -23,7 +24,8 @@ layout: default
                 alt=page.profile.image -%}
               {% endif -%}
             </div>
-            <div class="col-sm-9">
+            {%- endif %}
+            <div class="{% if page.profile.image %}col-sm-9{% else %}col-sm-12{% endif %}">
               <h1 class="post-title">
                 {% if site.title == "blank" -%}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }} {%- else -%}{{ site.title }}{%- endif %}
               </h1>

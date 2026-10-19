@@ -5,7 +5,7 @@ permalink: /
 subtitle: <a href='https://ai.meta.com/'>Meta Superintelligence Lab</a>. rucnyz@gmail.com.
 
 profile:
-  image: prof_pic.JPG
+  # image: prof_pic.JPG  # photo hidden; uncomment to show it again
   image_circular: false # crops the image to make it circular
   address: >
     <p>1 Meta Way, Menlo Park, CA 94025</p>
