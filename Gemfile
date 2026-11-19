@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '3.0.2'
+ruby '~> 3.0.0'
 
 gem 'uri', '0.10.1'
 
